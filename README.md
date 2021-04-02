@@ -8,7 +8,7 @@ Some experiments with JavaEE "Timesheet" web App from "drvicx/jdm" repo<hr/>
 
 06: 20210401: Connect DB
 - на Linux Ubuntu сервер устанавлена СУБД HSQLDB (HyperSQL DataBase);
-- на серврер скопирован рабочий каталог содержащий скрипты описания БД из проекта drvicx/jdm.timesheet;
+- на сервер скопирован рабочий каталог содержащий скрипты описания БД из проекта drvicx/jdm.timesheet;
 - создан скрипт "HSQL_start.sh" запускающий СУБД;
 - создан скрипт "HSQL_stop.sh" безопасно останавливающий СУБД;
 - добавлены необходимые зависимости в pom.xml;
