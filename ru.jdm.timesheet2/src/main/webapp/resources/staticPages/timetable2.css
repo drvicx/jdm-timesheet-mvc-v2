@@ -1,0 +1,101 @@
+/***********************************************************************************************************************
+ *=СТИЛИ ДЛЯ ТАБЛИЦЫ С ТАБЕЛЕМ (timetable2.html)
+ **********************************************************************************************************************/
+
+/*ОСНОВНОЙ БЛОК В КОТОРОМ РАЗМЕЩЕНА ФОРМА*/
+.waffle {
+    font-size: 13px;
+    table-layout: fixed;
+    border-collapse: separate;
+    /*border-style: none;*/
+    border-spacing: 0;
+    width: 0;
+    cursor: default;
+    border: 1px solid red;                  /*внешняя рамка таблицы*/
+    margin-left: 5px;                       /*отсуп от левой границы внешнего контейнера*/
+    margin-top: 5px                         /*отсуп от верхней границы внешнего контейнера*/
+}
+
+/*ВНЕШНИЙ КОНТЕЙНЕР ДЛЯ ВСЕЙ ОБЛАСТИ*/
+.grid-container {
+    /*background-color: #eee;*/             /*цвет заливки: (default:серый)*/
+    background-color: white;                /*цвет заливки: (такой-же как у body)*/
+    overflow: hidden;
+    position: relative;
+    z-index: 0
+}
+
+.waffle td {
+    overflow: hidden;
+    /*border: 1px #e5e5e5 solid;*/         /*отображение границ ячеек excel-таблицы: (default)*/
+    border-color: rgba(0, 0, 0, 0.15);
+    border-width: 0 1px 1px 0;
+    vertical-align: bottom;
+    line-height: inherit;
+    background-color: #fff;
+    padding: 0 3px
+}
+
+/*ЗАГОЛОВОК КОЛОНОК (блок координат колонок)*/
+.waffle th {
+    font-weight: normal;
+    background: transparent;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8pt;
+    color: #222;
+    /*height: 23px;*/                      /*высота блока: (default)*/
+    height: 10px;                          /*высота блока: делаем небольшой отступ сверху*/
+    /*border: solid 1px #ccc;*/            /*отображение границ заголовков колонок и строк: (default)*/
+    /*border: solid 1px red;*/             /*отображение границ заголовков колонок и строк: (test)*/
+    border-width: 0 1px 1px 0;
+    overflow: hidden;
+    padding: 0
+}
+
+/*ЗАГОЛОВОК СТРОК (блок координат строк)*/
+th.row-header {
+    /*background-color: #eee;*/            /*цвет заливки угловой ячейки слева-вверху: (default)*/
+    /*background-color: yellow;*/          /*цвет заливки угловой ячейки слева-вверху: (test)*/
+    /*width: 45px;*/                       /*ширина блока: (default)*/
+    width: 0;                              /*ширина блока: отступ слева нам не нужен, он будет реальизован на уровне внешнего Контейнера*/
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8pt;
+    color: #333;
+    line-height: inherit;
+    overflow: hidden
+}
+
+/*ЯЧЕЙКИ ЗАГОЛОВКОВ КОЛОНОК И СТРОК*/
+div.column-headers-background,
+th.column-headers-background,
+div.row-headers-background,
+th.row-headers-background {
+    /*background: #f8f9fa;*/               /*цвет заливки: (default)*/
+    /*background: yellow;*/                /*цвет заливки: (test)*/
+    color: #5f6368;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif
+}
+
+/*ВНЕШНИЙ КОНТЕЙНЕР ДЛЯ ВСЕЙ ОБЛАСТИ: растяжка на весь экран --почему-то второй раз*/
+/*(default)*/
+/*
+.grid-container {
+	height: 100%;
+	width: 100%;
+	overflow: auto
+}
+*/
+
+.grid-container {
+    height: 612px;
+    width: 1085px;                         /*ширина внешнего контейнера: чуть шире размера области формы*/
+    overflow: auto;
+    border: 1px solid #ddd;                /*отображение внешней рамки контейнера: (test)*/
+    /*top: 10%;*/                          /*отступ сверху от границы окна брузера*/
+    /*left: 10%*/                          /*отступ слева от границы окна брузера*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*float: left;*/
+}
