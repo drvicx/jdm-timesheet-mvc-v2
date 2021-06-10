@@ -1,5 +1,6 @@
 # jdm2
-Some experiments with JavaEE "Timesheet" web App from "drvicx/jdm" repo<hr/>
+Some experiments with JavaEE "Timesheet" web App <br>
+from ["drvicx/jdm_timesheet-mvc-v1"](https://github.com/drvicx/jdm_timesheet-mvc-v1) repo<hr/>
 
 
 <b>=ИСТОРИЯ ИЗМЕНЕНИЙ:</b><br/>
