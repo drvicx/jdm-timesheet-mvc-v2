@@ -1,4 +1,4 @@
-# jdm2
+# jdm_timesheet-mvc-v2
 Some experiments with JavaEE "Timesheet" web App <br>
 from ["drvicx/jdm_timesheet-mvc-v1"](https://github.com/drvicx/jdm_timesheet-mvc-v1) repo<hr/>
 
