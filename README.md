@@ -1,6 +1,6 @@
 # jdm-timesheet-mvc-v2
 Some experiments with JavaEE "Timesheet" web App <br>
-from ["drvicx/jdm_timesheet-mvc-v1"](https://github.com/drvicx/jdm_timesheet-mvc-v1) repo<hr/>
+from ["drvicx/jdm-timesheet-mvc-v1"](https://github.com/drvicx/jdm-timesheet-mvc-v1) repo<hr/>
 
 
 <b>=ИСТОРИЯ ИЗМЕНЕНИЙ:</b><br/>
